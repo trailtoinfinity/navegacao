@@ -2,6 +2,7 @@ import React from "react";
 import TextoCentral from "../components/TextoCentral";
 import { Image, View } from "react-native";
 import NextStack from "../components/NextStack";
+import GoBackStack from "../components/GoBackStack";
 
 export default props => (
     <View style={{ flex: 1, backgroundColor: '#5703ab', justifyContent: 'center', alignItems: 'center' }}>
@@ -16,6 +17,7 @@ export default props => (
             borderRadius: 200,
             margin: 20
         }} source={{ uri: "https://i.imgur.com/fxEU3SU.jpeg" }} />
-        <NextStack {...props} title='Back' component='TelaA' />
+        <NextStack {...props} title='Back to HomeScreen' component='TelaA' />
+        <GoBackStack {...props} title='Go Back' />
     </View>
 )
